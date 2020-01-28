@@ -41,7 +41,7 @@ class GasPrice:
 
       for day in self.dataset:
         if self.__to_day(day) > self.__to_day(prev_day):
-          csv_handle.write(prev_day[0][3:6] + ',' + prev_day[1])
+          csv_handle.write(prev_day[0][3:] + ',' + prev_day[1])
           csv_handle.write('\n')
         prev_day = day
       
