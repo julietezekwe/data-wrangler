@@ -1,0 +1,22 @@
+  {
+    "profile": "tabular-data-package",
+    "name": "data-wrangler",
+    "resources": [
+      {
+        "path": "output/output_daily_prices.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "DATE",
+              "type": "string"
+            },
+            {
+              "name": "PRICE",
+              "type": "number"
+            }
+          ]
+        }
+      }
+    ]
+  }
